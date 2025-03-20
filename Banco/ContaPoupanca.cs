@@ -12,34 +12,12 @@ namespace Banco
 
             public ContaPoupanca(int numeroConta, string titular, double saldo) : base(numeroConta, titular, saldo)
             {
-
+              Bonus = 0.005;
 
             }
-       /*  public double Depositar(double SaldoConta)
-          {
+     
 
-            
-
-          }*/
-
-        public void ContaPoupancaExibir()
-        {
-            Console.WriteLine("Informe o número da sua conta: ");
-            int numConta = Convert.ToInt32(Console.ReadLine());
-           
-            Console.WriteLine("Infomre o titular: ");
-            string titularConta = Console.ReadLine();
-
-            Console.WriteLine("Informe seu saldo: ");
-            double saldoConta = Convert.ToDouble(Console.ReadLine());
-            Console.Clear();
-
-            double sal = ExibirSaldo(saldoConta);
-
-            ContaCorrente cc = new ContaCorrente(numConta,titularConta,saldoConta);
-
-           
-        }
+        
 
     }
 }
